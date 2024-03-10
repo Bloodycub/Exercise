@@ -19,8 +19,8 @@
 ## Input In CMD
 ### For Windows
 ```bash
-set CLIENT_ID=(YOUR CLIENT ID)
-set CLIENT_SECRET=(YOUR CLIENT SECRETKEY)
+set CLIENT_ID={your_client_id}
+set CLIENT_SECRET={your_client_secret}
 python Gittask.py
 ```
 ## Example
@@ -60,15 +60,14 @@ Open Docker desktop. To download docker, [Docker dowenload](https://www.docker.c
 ```bash
 cd /path/to/your/
 docker build -t {your_image_name} .
-
-- Example: docker build -t gittask .
 ```
+- Example: docker build -t gittask .
 
 - now take a sip of coffee for 10sec
 
 ## Docker Running
 ```bash
-docker run -e CLIENT_ID=(your_client_id) -e CLIENT_SECRET=(your_client_secret) -p 5000:5000 {your_image_name}
+docker run -e CLIENT_ID={your_client_id} -e CLIENT_SECRET={your_client_secret} -p 5000:5000 {your_image_name}
 ```
 - After pressing 'Enter,' the server is now running. Please note that there should be no text after pressing 'Enter.'
 
